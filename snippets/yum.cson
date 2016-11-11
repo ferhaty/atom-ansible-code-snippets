@@ -1,0 +1,28 @@
+".source.yaml":
+  "yum":
+    "prefix": "yum"
+    "body": """
+    - name: $1
+      yum:
+        name: $2
+        state: $3
+        update_cache: yes
+      when: $4
+    """
+
+  "yum_repository":
+    "prefix": "yum_rep"
+    "body": """
+    - name: $1
+      yum_repository:
+        name: $2
+        description: $3
+        baseurl: $4
+        file: $5
+        enabled: yes
+        gpgcheck: no
+        file: $6
+        state: present
+      when: $7
+    """
+

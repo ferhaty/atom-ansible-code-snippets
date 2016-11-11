@@ -1,0 +1,13 @@
+".source.yaml":
+  "systemd":
+    "prefix": "systemd"
+    "body": """
+    - name: $1
+      service:
+        name: $2
+        enabled: yes
+        state: started
+        masked: no
+        daemon_reload: yes
+      when: $3
+    """

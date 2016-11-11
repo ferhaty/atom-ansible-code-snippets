@@ -1,0 +1,47 @@
+".source.yaml":
+  "apt":
+    "prefix": "apt"
+    "body": """
+    - name: $1
+      apt:
+        name: $2
+        state: $3
+        install_recommends: no
+        update_cache: yes
+        cache_valid_time: 3600
+    """
+  
+  "apt_key":
+    "prefix": "apt_key"
+    "body": """
+    - name: $1
+      apt_key:
+        file: "$2"
+        keyserver: "$3"
+        id: "$4"
+        url: "$5"
+        state: present
+      when: $6
+    """
+
+  "apt_repository":
+    "prefix": "apt_rep"
+    "body": """
+    - name: $1
+      apt_repository:
+        repo: "$2"
+        mode: 420
+        state: present
+        update_cache: yes
+        validate_certs: yes
+      when: $3
+    """
+  "apt_rpm":
+    "prefix": "apt_rpm"
+    "body": """
+    - name: $1
+      apt_rpm:
+        pkg: "$2"
+        state: present
+        update_cache: yes;       
+    
