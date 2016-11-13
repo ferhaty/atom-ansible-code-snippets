@@ -27,3 +27,24 @@
         mode: $8
         recurse: no
     """
+
+  "set/retrieve extended attributes":
+    "prefix": "xattr"
+    "body": """
+    - name: $1
+      xattr:
+        name: $2
+        follow: $3
+        state: get
+        value: $4
+    """
+
+  "Fetches a file from remote nodes":
+    "prefix": "fetch"
+    "body": """
+    - name: $1
+      fetch:
+        dst: $2
+        src: $3
+    """
+

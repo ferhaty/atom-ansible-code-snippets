@@ -1,0 +1,26 @@
+".source.yaml":
+  "Send Slack notifications":
+    "prefix": "slack"
+    "body": """
+    - name: $1
+      slack:
+        token: $2
+        domain: $3
+        channel: $4
+        username: $5
+        msg: $6
+        color: normal
+      when: $7
+    """
+
+  "Sending notifications via telegram":
+    "prefix": "telegram"
+    "body": """
+    - name: $1
+      telegram:
+        chat_id: $2
+        msg: $3        
+        token: $4
+      when: $7
+    """
+
