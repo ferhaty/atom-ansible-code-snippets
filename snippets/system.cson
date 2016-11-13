@@ -1,0 +1,16 @@
+".source.yaml":
+  "Manage cron.d and crontab entries":
+    "prefix": "cron"
+    "body": """
+    - name: $1
+      cron:
+        name: $2
+        user: $3
+        minute: $4
+        hour: $5
+        day: $6
+        month: $7
+        weekday: $8
+        job: $9
+        state: present
+    """

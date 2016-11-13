@@ -1,5 +1,5 @@
 ".source.yaml":
-  "apt":
+  "Manages apt-packages":
     "prefix": "apt"
     "body": """
     - name: $1
@@ -11,7 +11,7 @@
         cache_valid_time: 3600
     """
   
-  "apt_key":
+  "Add or remove an apt key":
     "prefix": "apt_key"
     "body": """
     - name: $1
@@ -24,8 +24,8 @@
       when: $6
     """
 
-  "apt_repository":
-    "prefix": "apt_rep"
+  "Add and remove APT repositories":
+    "prefix": "apt_repository"
     "body": """
     - name: $1
       apt_repository:
@@ -36,7 +36,8 @@
         validate_certs: yes
       when: $3
     """
-  "apt_rpm":
+
+  "apt_rpm package manager":
     "prefix": "apt_rpm"
     "body": """
     - name: $1

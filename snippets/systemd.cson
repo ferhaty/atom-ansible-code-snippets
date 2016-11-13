@@ -1,5 +1,5 @@
 ".source.yaml":
-  "systemd":
+  "Manage services":
     "prefix": "systemd"
     "body": """
     - name: $1

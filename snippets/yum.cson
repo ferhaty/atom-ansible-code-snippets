@@ -1,5 +1,5 @@
 ".source.yaml":
-  "yum":
+  "Manages packages with the *yum* package manager":
     "prefix": "yum"
     "body": """
     - name: $1
@@ -10,7 +10,7 @@
       when: $4
     """
 
-  "yum_repository":
+  "Add and remove YUM repositories":
     "prefix": "yum_rep"
     "body": """
     - name: $1

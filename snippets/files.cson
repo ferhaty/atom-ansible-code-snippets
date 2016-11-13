@@ -1,18 +1,6 @@
 ".source.yaml":
-  "dir":
-    "prefix": "dir"
-    "body": """
-    - name: $1
-      file:
-        path: $2
-        state: directory
-        owner: $3
-        group: $4
-        recurse: $5
-    """
-
-  "template":
-    "prefix": "temp"
+  "Templates a file out to a remote server.":
+    "prefix": "template"
     "body": """
     - name: $1
       template:
@@ -25,7 +13,7 @@
         validate: $8
     """
 
-  "file":
+  "Sets attributes of files":
     "prefix": "file"
     "body": """
     - name: $1
