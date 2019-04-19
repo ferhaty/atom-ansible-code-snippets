@@ -1,7 +1,7 @@
 {
   "name": "atom-ansible-code-snippets",
   "main": "./lib/atom-ansible-snippets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Atom Ansible Code Snippets",
   "keywords": [],
   "activationCommands": {
