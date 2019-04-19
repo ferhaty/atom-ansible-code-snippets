@@ -7,7 +7,7 @@
   "activationCommands": {
     "atom-workspace": "atom-ansible-snippets:toggle"
   },
-  "repository": "https://github.com/if22/atom-ansible-snippets",
+  "repository": "https://github.com/ferhaty/atom-ansible-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
