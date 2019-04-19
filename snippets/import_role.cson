@@ -1,0 +1,10 @@
+".source.yaml":
+  "Imports a role":
+    "prefix": "import_role"
+    "body": """
+    - name: $1
+      import_role:
+        name: $2
+      tags:
+        - $3
+    """
