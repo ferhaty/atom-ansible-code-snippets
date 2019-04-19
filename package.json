@@ -1,13 +1,13 @@
 {
-  "name": "atom-ansible-snippets",
+  "name": "atom-ansible-code-snippets",
   "main": "./lib/atom-ansible-snippets",
-  "version": "0.7.2",
-  "description": "Atom Ansible Snippets",
+  "version": "0.0.1",
+  "description": "Atom Ansible Code Snippets",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atom-ansible-snippets:toggle"
+    "atom-workspace": "atom-ansible-code-snippets:toggle"
   },
-  "repository": "https://ferhaty@github.com/ferhaty/atom-ansible-snippets",
+  "repository": "https://ferhaty@github.com/ferhaty/atom-ansible-code-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
